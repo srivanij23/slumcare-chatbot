@@ -5,11 +5,11 @@ import streamlit as st
 
 class AIAgent:
     def __init__(self,
-                 category_model_path='aiagent/category_model.pkl',
-                 authority_model_path='aiagent/authority_model.pkl',
-                 category_encoder_path='aiagent/category_encoder.pkl',
-                 authority_encoder_path='aiagent/authority_encoder.pkl',
-                 vectorizer_path='aiagent/vectorizer.pkl'):
+                 category_model_path='aiAgent/category_model.pkl',
+                 authority_model_path='aiAgent/authority_model.pkl',
+                 category_encoder_path='aiAgent/category_encoder.pkl',
+                 authority_encoder_path='aiAgent/authority_encoder.pkl',
+                 vectorizer_path='aiAgent/vectorizer.pkl'):
 
         try:
             self.category_model = joblib.load(category_model_path)
